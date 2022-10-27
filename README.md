@@ -2,5 +2,5 @@
 Test cases for Shopware PWA Open Source project
 
 ## Repository conteins 
-- Test Cases 
-- Issues Found
+- [Test Cases](./Shopware%20PWA%20Test%20Cases.csv)
+- [Issues Found](./Issues%20List.csv)
