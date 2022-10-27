@@ -1,0 +1,87 @@
+TCID,Name, Preconditions,Steps ID,Steps to execute,Expectet result,Status
+,Registration,,,,,
+1,Registration with correct data,"Site is opened, registration window is visible",1,Enter correct login,The user is registered and information about the correct registration is displayed,Pass
+,,,2,Enter correct password,,
+,,,,,,
+2,Incorrectly completed login field,"Site is opened, registration window is visible",1,Enter an email that does not comply with validation,Information about invalid e-mail user is not registered,Pass
+,,,2,Enter correct password,,
+,,,,,,
+3,Incorrectly completed password field,"Site is opened, registration window is visible",1,Enter correct login,,
+,,,2,Enter passwordthat does not comply with validation,"Information about password validation error, user is not registered",Pass
+,,,,,,
+,,,,,,
+4,Log in with valid data,"Site is opened, log in window is visible",1,Enter correct login and password,Zalogowanie użytkowanika,Pass
+,,,2,"Press ""login.""",,
+,,,,,,
+5,Login without filling in the required fields,"Site is opened, log in window is visible",1,"Leave the ""login"" and ""password"" fields empty",Message that email and password are required,Pass
+,,,2,"Press ""login in.""",,
+,,,,,,
+6,Login with correct login and wrong password,"Site is opened, log in window is visible",1,Enter correct login ,,
+,,,2,Enter wrong password,,Fail
+,,,,,,
+7,Logging in with a valid login and empty password field,"Site is opened, log in window is visible",1,Enter correct login ,,
+,,,2,"Leave the ""password"" field empty",Message about wrong login or password and inability to log in,Pass
+,,,,,,
+8,Log in with correct password and wrong login ,"Site is opened, log in window is visible",1,Enter incorrect login,,
+,,,2,Enter correct password,,
+,,,3,"Press ""log in""",A message about an incorrect login and inability to log in.,Fail
+,,,,,,
+,,,,,,
+,Log in,,,,,
+,,,,,,
+9,User logout,User is logged in,1,"Press ""log out""",User is logged out,Pass
+,,,,,,
+10,Checking the 404 error view,Site is opened,1,Add random characters to the website address,Staus 404 (not found)information that the specified page does not exist or was not found,Pass
+,,,,,,
+11,Transition between login and password fields with Tab button,"Site is opened, log in window is visible",1,Enter correct login,,
+,,,,,,
+,Cart ,,2,"Press ""Tab""",Cursor visible in password field,Pass
+12,Adding an item to your cart - user logged in,"Site is opened, user is logged in ",1,View product,,
+,,,2,"Press the ""add to cart"" button","Item is added to cart, price is updated",Pass
+,,,,,,
+13,Removing products from the cart,"Site is opened, user is logged in, cart view is opened",1,"Remove product from the cart via ""remove"" button","Selected product is removed, price is recalculated",Pass
+,,,,,,
+14,Removing products from the cart by reducing the number to 0,"Site is opened, user is logged in, cart view is opened",1,Change the number of items in the cart by entering zero in the quantity field,"The selected item is removed from the cart, the price is updated",Fail
+,,,,,,
+15,Changing quantity of product in the cart,"Site is opened, user is logged in, cart view is opened",1,Increase or decrease the number of items in the shopping cart,The number of products in the cart is changed  and the price is recalculated,Pass
+,,,,,,
+,Search,,,,,
+16,Searchin by using search button in the search bar ,Homepage is opened,1,Go to search field,,
+,,,2,Enter string ,,
+,,,3,Press search button ,The search is executed ,Fail 
+,,,,,,
+16,Searching for a string,Homepage is opened,1,Go to search field,,
+,,,2,Enter string ,,
+,,,3,Press search icone ,All places where the search string occurs are displayed,Pass
+17,Searching by criteria for no results,Homepage is opened,1,Go to search field,,
+,,,2,Enter a string that is not on any subpage,1.Message about no results or the search engine does not start or all results on the page are displayed or a message about no search criteria is displayed,Pass
+,,,,,,
+18,Searching with search box left blank,Homepage is opened,1,Left the search filed empty,,
+,,,2,Press search icone ,No action without a message,Pass
+,,,,,,
+19,Adding product  from product listing page to wishlist ,Homepage is opened,1,Go to product listing site ,,
+,,,2,Add some product to wishlist,Product has been added to your wishlist ,Pass
+,,,,,,
+20,Adding product  from product details page to wishlist ,Homepage is opened,1,Go to product listing site ,,
+,,,2,Chose one product ,,
+,,,3,Go to the product details page ,,
+,,,4,Try to add product to the wishlist ,Product has been added to your wishlist ,Fail
+,,,,,,
+21,Checking the correct order of the displayed results,Homepage is opened,1,Go to search filed,Na górze powinny być wświetlne wyniki najbliższe szukanej frazie,
+,,,2,Enter string,,
+,,,3,Press search button or enter,,
+22,The results closest to the search phrase are displayed at the top ,Homepage is opened,1,Select a product category,,
+,,,2,"Change sorting from default to ""by price"" ascending or descending","Products displayed according to the sorting criterion, after changing the results page and refreshing the correct sorting order is retained",Pass
+,,,,,,
+,,,,,,
+,,,,,,
+23,Changing the adress data,Homepage is opened,1.,Enter address data that does not comply with country requirements,Information about incorrect address data is displayed,Fail 
+,,,,,,
+,,,,,,
+24,Changing password ,Homepage is opened,1,"Go to ""my account""",,
+,,,2,"Go to ""my profile""",,
+,,,3,Chose password change from menu above,,
+,,,4,Temp correct current password,,
+,,,5,Add new password,,
+,,,6,Repeat password correctly,,
+,,,7,"Click ""update password""",visible information about successful password change,Fail 
