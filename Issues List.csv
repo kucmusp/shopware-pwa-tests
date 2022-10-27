@@ -1,0 +1,237 @@
+Issue ID,1
+,
+,
+Issue Name,It's possible to type 0 as quantitybefore adding to the cart on pdp
+,
+Priority,low
+,
+,
+Enviroment,"Window 10, Google Chrome, version 105.0.5195.127 ,"
+,
+Summary,
+,
+Test Data,Shopware PWA demo site is opened
+,
+Steps to reproduce,"1.Chose” Women"" from the category"
+,"2. Chose ""Tops"""
+,3.Change view on list icone
+,4.Change amount of product into 0 by using your keyboard
+,5.Statment that new product has been added to the cart is visiable
+,
+Expected Results,After typing 0 manualy the value is set to the minimum quantity or it's impossible to set zero 
+,
+Acctual result,It's possible to type 0 
+Attachmens,
+,
+Issue ID,2
+,
+,
+Issue Name,No message about an incorrect password
+,
+Priority,low
+,
+,
+Enviroment,"Window 10, Google Chrome, version 105.0.5195.127 ,"
+,
+Summary,
+,
+Test Data,"Shopware PWA demo site is opened, log in view is opened"
+,
+Steps to reproduce,1. Type correct e-mail
+,2. Type incorrect password
+,"3. Press ""log in"""
+,
+,
+,
+Expected Results,information about the wrong password should be visible and log in process failed
+,
+Acctual result,Log in process failed but there is no message about an incorrect password
+Attachmens,
+,
+Issue ID,3
+,
+,
+Issue Name,No message about an incorrect login
+,
+Priority,medium
+,
+Enviroment,"Window 10, Google Chrome, version 105.0.5195.127 ,"
+,
+Summary,
+,
+Test Data,"Shopware PWA demo site is opened, log in view is opened"
+,
+Steps to reproduce,1. Type some incorrect e-mail
+,2. Type correct password
+,"3. Press ""log in"""
+,
+,
+,
+Expected Results,information about the wrong login should be visible and log in process failed
+,
+Acctual result,Log in process failed but there is no message about an incorrect login
+Attachmens,
+Issue ID,4
+,
+,
+Issue Name,address data doesn't comply with the country's requirements
+,
+Priority,low
+,
+Enviroment,"Window 10, Google Chrome, version 105.0.5195.127 ,"
+,
+Summary,
+,
+Test Data,"Shopware PWA demo site is opened, my account view is opnened"
+,
+Steps to reproduce,"1. type some not egsisting street, city, post code etc."
+,"2. Click ""update the adress"""
+,
+,
+,
+,
+Expected Results,information about the wrong adress date should be visable
+,
+Acctual result,It's possible to add not egsisting adress 
+Attachmens,
+Issue ID,5
+,
+,
+Issue Name,"Button ""add new address"" doesn't work correctly"
+,
+Priority,low
+,
+Enviroment,"Window 10, Google Chrome, version 105.0.5195.127 ,"
+,
+Summary,
+,
+Test Data,"Shopware PWA demo site is opened, my account view is opnened"
+,
+Steps to reproduce,"1.Chose my addresses from menu ""My account"""
+,"2. Click ""add new address"""
+,
+,
+,
+,
+Expected Results,"Address window is opnened, is possiblle to add new address data "
+,
+Acctual result,"Visible information ""Keep your addresses and contact details updated"" there is no form to fill up"
+Attachmens,
+,
+Issue ID,6
+,
+,
+Issue Name,option to change password works incorrectly
+,
+Priority,low
+,
+Enviroment,"Window 10, Google Chrome, version 105.0.5195.127 ,"
+,
+Summary,Password  is changed but there is no message about successful password change
+,
+Test Data,"Shopware PWA demo site is opened, my account view is opnened"
+,
+Steps to reproduce,"1.Go to ""my account"""
+,"2.Go to ""my profile"""
+,3.Chose password change from menu above
+,4.Temp correct current password
+,5.Add new password
+,6.Repeat password correctly
+,"7.Click ""update password"""
+,
+Expected Results,Visible information about successful password change and password changed
+Acctual result,Password is changed but there isn't any information about successful password change
+Attachmens,
+Issue ID,7
+,
+,
+Issue Name,Manual changing quantity of product into 0 to the cart
+,
+Priority,low
+,
+Enviroment,"Window 10, Google Chrome, version 105.0.5195.127 ,"
+,
+Summary,
+,
+Test Data,"Shopware PWA demo site is opened, user logged in,"
+,
+Steps to reproduce,1. Add some randome product to the cart
+,2. Go to the cart view
+,3. Change the number of products in the cart manually to zero
+,
+,
+,
+Expected Results,Product is removed from the cart or it's impossible to enter 0
+,
+Acctual result,Nothing happens
+Attachmens,
+Issue ID,8
+,
+,
+Issue Name,Missing search button in the search bar 
+,
+Priority,low
+,
+Enviroment,"Window 10, Google Chrome, version 105.0.5195.127 ,"
+,
+Summary,
+,
+Test Data,"Shopware PWA demo site is opened, user logged in,"
+,
+Steps to reproduce,1.Go to search field
+,2.Enter string 
+,3.Try to find the search button 
+,
+,
+,
+Expected Results,the search button is visable. It's possible to search by using search button 
+,
+Acctual Result,Lack of search button It's possible to search only by pressing enter 
+Attachmens,
+Issue ID,9
+,
+,
+Issue Name,Not identified button on the top of the site 
+,
+Priority,low
+,
+Enviroment,"Window 10, Google Chrome, version 105.0.5195.127 ,"
+,
+Summary,
+,
+Test Data,Shopware PWA demo site is opened
+,
+Steps to reproduce,1.Go to homepage
+,2. Go to the top of the screen 
+,
+,
+,
+,
+Expected Results,
+,
+Acctual Result,
+Attachmens,
+,
+Issue ID,10
+,
+,
+Issue Name,Missing add to wishlist icone on the product details page 
+,
+Priority,low
+,
+Enviroment,"Window 10, Google Chrome, version 105.0.5195.127 ,"
+,
+Summary,
+,
+Test Data,Shopware PWA demo site is opened
+,
+Steps to reproduce,1. Chose one product 
+,2. Go to the product details site of this product
+,3. Try to add this product to wishlist 
+,
+,
+,
+Expected Results, It's possible to add product into the wishlist from product listing and from the product details page 
+,
+Acctual Result, It's possible to add product into the wishlist only from product listing 
+Attachmens,
